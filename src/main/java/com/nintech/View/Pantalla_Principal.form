@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.nintech.View.Pantalla_Principal">
+  <grid id="27dc6" binding="pantalla" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="720" height="400"/>
+    </constraints>
+    <properties>
+      <preferredSize width="1080" height="720"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="76dee" binding="header" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="North"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="4d401" class="javax.swing.JLabel" binding="wherEatLabel">
+            <constraints/>
+            <properties>
+              <background color="-16777216"/>
+              <font name="Inter Semi Bold" size="36" style="1"/>
+              <foreground color="-16777216"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="WherEat"/>
+            </properties>
+          </component>
+          <hspacer id="47091">
+            <constraints/>
+          </hspacer>
+          <hspacer id="bb5fa">
+            <constraints/>
+          </hspacer>
+          <hspacer id="4793e">
+            <constraints/>
+          </hspacer>
+          <hspacer id="85fe8">
+            <constraints/>
+          </hspacer>
+          <hspacer id="d1461">
+            <constraints/>
+          </hspacer>
+          <hspacer id="e8720">
+            <constraints/>
+          </hspacer>
+          <hspacer id="283b">
+            <constraints/>
+          </hspacer>
+          <component id="11317" class="javax.swing.JTextField" binding="busqueda">
+            <constraints/>
+            <properties>
+              <horizontalAlignment value="11"/>
+              <inheritsPopupMenu value="false"/>
+              <preferredSize width="300" height="30"/>
+            </properties>
+          </component>
+          <component id="fb2fd" class="javax.swing.JComboBox" binding="filtros">
+            <constraints/>
+            <properties>
+              <model>
+                <item value="Filtros"/>
+                <item value="Facultad"/>
+                <item value="Especialidad"/>
+                <item value="Cafeteria"/>
+              </model>
+            </properties>
+          </component>
+          <component id="5680" class="javax.swing.JButton" binding="buscarButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <text value="Buscar"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="aabe3" binding="footer" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="South"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="b92f4" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <text value="Aqui iran cositas."/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="e0f0d" class="javax.swing.JScrollBar" binding="scrollBar">
+        <constraints border-constraint="East"/>
+        <properties>
+          <autoscrolls value="true"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

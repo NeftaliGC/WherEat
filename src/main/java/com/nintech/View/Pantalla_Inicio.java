@@ -4,6 +4,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import com.nintech.Controller.mainController;
+import com.nintech.View.Pantalla_Principal;
 
 public class Pantalla_Inicio extends JPanel{
     private JPanel p_inicio;
@@ -31,13 +33,7 @@ public class Pantalla_Inicio extends JPanel{
 
     public Pantalla_Inicio() {
 
-        centro.setLayout(cardLayout);
-        centro.add(getBotones(), "Card1");
-        centro.add(getInicioSesion(), "Card2");
-        centro.add(getRegistrarse(), "Card3");
-
-
-
+        createUIComponents();
 
         iniciarSesionButton.addActionListener(new ActionListener() {
             @Override
@@ -75,6 +71,24 @@ public class Pantalla_Inicio extends JPanel{
                 centro.repaint();
             }
         });
+        IniciarSesionButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                mainController mainController = new mainController();
+                String correo = correoFielInicio.getText();
+                String contraseña = passwordFielInicio.getText();
+                if(mainController.iniciarSesion(correo, contraseña)) {
+                    System.out.println("Iniciar Sesion");
+                    JFrame frame = new JFrame("WhereEat");
+                    frame.setContentPane(new Pantalla_Principal().getP_principal());
+                    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    frame.pack();
+                    frame.setVisible(true);
+                } else {
+                    System.out.println("No Iniciar Sesion");
+                }
+            }
+        });
     }
 
     public JPanel getP_inicio() {
@@ -99,6 +113,10 @@ public class Pantalla_Inicio extends JPanel{
 
     private void createUIComponents() {
         // TODO: place custom component creation code here
+        centro.setLayout(cardLayout);
+        centro.add(getBotones(), "Card1");
+        centro.add(getInicioSesion(), "Card2");
+        centro.add(getRegistrarse(), "Card3");
     }
 
 }

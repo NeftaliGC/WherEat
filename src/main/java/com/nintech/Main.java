@@ -1,6 +1,6 @@
 package com.nintech;
 import com.nintech.View.Pantalla_Inicio;
-
+import com.nintech.View.Pantalla_Principal;
 import javax.swing.*;
 
 public class Main {

@@ -7,8 +7,8 @@
     <list default="true" id="09277ed3-b522-4f1f-bce7-6bad0736463e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nintech/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nintech/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nintech/View/Pantalla_Inicio.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nintech/View/Pantalla_Inicio.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nintech/View/Pantalla_Inicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nintech/View/Pantalla_Inicio.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,10 +44,16 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW": "true",
-    "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "206"
+    "UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW": "false",
+    "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "206",
+    "ignore.virus.scanning.warn.message": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Nintech\Proyectos\Programas\java\WherEat\WherEat\src\main\java\com\nintech\Data" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nintech.Main" />
@@ -92,5 +98,38 @@
       <updated>1700099017008</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
