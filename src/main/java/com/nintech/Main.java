@@ -9,7 +9,7 @@ public class Main {
         JFrame frame = new JFrame("WhereEat");
         frame.setContentPane(new Pantalla_Inicio().getP_inicio());
 
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
 

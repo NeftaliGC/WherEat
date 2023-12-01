@@ -101,7 +101,7 @@
                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <text value="Nombre o Correo:"/>
+                  <text value="Correo:"/>
                 </properties>
               </component>
               <component id="b16ad" class="javax.swing.JTextField" binding="correoFielInicio">
@@ -118,6 +118,16 @@
                 </constraints>
                 <properties>
                   <text value="Regresar"/>
+                </properties>
+              </component>
+              <component id="9c85d" class="javax.swing.JLabel" binding="inicioSesionErrorField">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <enabled value="true"/>
+                  <text value=""/>
+                  <visible value="false"/>
                 </properties>
               </component>
             </children>
@@ -138,7 +148,7 @@
                   <text value="Nombres:"/>
                 </properties>
               </component>
-              <component id="69318" class="javax.swing.JTextField" binding="textField2" default-binding="true">
+              <component id="69318" class="javax.swing.JTextField" binding="textFieldNombres">
                 <constraints>
                   <grid row="0" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                     <preferred-size width="150" height="-1"/>
@@ -154,7 +164,7 @@
                   <text value="Apellidos:"/>
                 </properties>
               </component>
-              <component id="191ca" class="javax.swing.JTextField" binding="textField3" default-binding="true">
+              <component id="191ca" class="javax.swing.JTextField" binding="textFieldApellidos">
                 <constraints>
                   <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                     <preferred-size width="150" height="-1"/>
@@ -170,7 +180,7 @@
                   <text value="Correo:"/>
                 </properties>
               </component>
-              <component id="b11e3" class="javax.swing.JTextField" binding="textField4" default-binding="true">
+              <component id="b11e3" class="javax.swing.JTextField" binding="textFieldCorreo">
                 <constraints>
                   <grid row="2" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                     <preferred-size width="150" height="-1"/>
@@ -186,7 +196,7 @@
                   <text value="Contraseña:"/>
                 </properties>
               </component>
-              <component id="70c8f" class="javax.swing.JPasswordField" binding="passwordField2" default-binding="true">
+              <component id="70c8f" class="javax.swing.JPasswordField" binding="passwordFieldRegistro">
                 <constraints>
                   <grid row="3" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                     <preferred-size width="150" height="-1"/>
@@ -208,6 +218,15 @@
                 </constraints>
                 <properties>
                   <text value="Regresar"/>
+                </properties>
+              </component>
+              <component id="9d8ee" class="javax.swing.JLabel" binding="errorRegistroField">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value=""/>
+                  <visible value="false"/>
                 </properties>
               </component>
             </children>

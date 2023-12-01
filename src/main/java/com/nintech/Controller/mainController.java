@@ -11,5 +11,12 @@ public class mainController {
         boolean result = validarSesion.validarInicio(correo, contraseña);
         return result;
     }
+
+    public boolean registrarUsuario(String nombres, String apellidos, String correo, String contraseña) {
+        System.out.println("Registrar Usuario");
+        registro registro = new registro();
+        boolean result = registro.registrarUsuario(nombres, apellidos, correo, contraseña);
+        return result;
+    }
     
 }

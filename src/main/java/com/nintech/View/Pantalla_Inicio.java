@@ -5,7 +5,6 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import com.nintech.Controller.mainController;
-import com.nintech.View.Pantalla_Principal;
 
 public class Pantalla_Inicio extends JPanel{
     private JPanel p_inicio;
@@ -20,19 +19,21 @@ public class Pantalla_Inicio extends JPanel{
     private JLabel contraseñaLabelInicio;
     private JButton IniciarSesionButton;
     private JPanel Registrarse;
-    private JTextField textField2;
-    private JTextField textField3;
-    private JTextField textField4;
-    private JPasswordField passwordField2;
+    private JTextField textFieldNombres;
+    private JTextField textFieldApellidos;
+    private JTextField textFieldCorreo;
+    private JPasswordField passwordFieldRegistro;
     private JPanel centro;
     private JButton regresarButton;
     private JButton regresarButtonRegistro;
     private JButton registrarseButtonForm;
+    private JLabel inicioSesionErrorField;
+    private JLabel errorRegistroField;
 
     private CardLayout cardLayout = new CardLayout();
 
     public Pantalla_Inicio() {
-
+        mainController mainController = new mainController();
         createUIComponents();
 
         iniciarSesionButton.addActionListener(new ActionListener() {
@@ -74,7 +75,7 @@ public class Pantalla_Inicio extends JPanel{
         IniciarSesionButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                mainController mainController = new mainController();
+                inicioSesionErrorField.setVisible(false);
                 String correo = correoFielInicio.getText();
                 String contraseña = passwordFielInicio.getText();
                 if(mainController.iniciarSesion(correo, contraseña)) {
@@ -84,8 +85,30 @@ public class Pantalla_Inicio extends JPanel{
                     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                     frame.pack();
                     frame.setVisible(true);
+                    //ocultarLogin(true); ## Hay que trabajar en esto (cierre del login al iniciar sesion)
                 } else {
-                    System.out.println("No Iniciar Sesion");
+                    inicioSesionErrorField.setText("Correo o contraseña incorrectos!!!");
+                    inicioSesionErrorField.setForeground(Color.red);
+                    inicioSesionErrorField.setVisible(true);
+                }
+            }
+        });
+        registrarseButtonForm.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String nombres = textFieldNombres.getText();
+                String apellidos = textFieldApellidos.getText();
+                String correo = textFieldCorreo.getText();
+                String contraseña = passwordFieldRegistro.getText();
+
+                if(mainController.registrarUsuario(nombres, apellidos, correo, contraseña)) {
+                    cardLayout.show(getCentro(), "Card1");
+                    centro.revalidate();
+                    centro.repaint();
+                } else {
+                    errorRegistroField.setText("El correo ya existe!!!");
+                    errorRegistroField.setForeground(Color.red);
+                    errorRegistroField.setVisible(true);
                 }
             }
         });
@@ -117,6 +140,14 @@ public class Pantalla_Inicio extends JPanel{
         centro.add(getBotones(), "Card1");
         centro.add(getInicioSesion(), "Card2");
         centro.add(getRegistrarse(), "Card3");
+    }
+
+    private void ocultarLogin(boolean confirm) {
+        if (confirm) {
+            InicioSesion.setVisible(false);
+        } else {
+            InicioSesion.setVisible(true);
+        }
     }
 
 }
