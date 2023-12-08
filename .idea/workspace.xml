@@ -9,8 +9,11 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nintech/Controller/mainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nintech/Controller/mainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nintech/Controller/validarInicioSesion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nintech/Controller/validarInicioSesion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nintech/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nintech/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nintech/View/Pantalla_Inicio.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nintech/View/Pantalla_Inicio.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nintech/Model/Credenciales.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nintech/Model/Credenciales.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nintech/Model/Establecimiento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nintech/Model/Establecimiento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nintech/Model/Facultad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nintech/Model/Facultad.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nintech/View/Pantalla_Inicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nintech/View/Pantalla_Inicio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nintech/View/Pantalla_Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nintech/View/Pantalla_Principal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Data/menus.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Data/menus.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,6 +34,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -42,15 +48,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW": "true",
-    "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "206",
-    "ignore.virus.scanning.warn.message": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH&quot;: &quot;206&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Nintech\Proyectos\Programas\java\WherEat\WherEat\src\main\java\com\nintech\Data" />
@@ -127,11 +133,15 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
-          <option name="timeStamp" value="1" />
-        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/nintech/Controller/mainController.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
       </breakpoints>
+      <default-breakpoints>
+        <breakpoint suspend="NONE" type="java-exception" />
+      </default-breakpoints>
     </breakpoint-manager>
   </component>
 </project>

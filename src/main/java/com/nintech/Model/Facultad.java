@@ -1,19 +1,24 @@
 package com.nintech.Model;
+import java.util.ArrayList;
 
 public class Facultad {
     private String nombre;
-    private Establecimiento establecimientos[];
+    private ArrayList<Establecimiento> establecimientos = new ArrayList<Establecimiento>();
 
-    public Facultad(String nombre, Establecimiento establecimientos[]) {
+    public Facultad(String nombre) {
         this.nombre = nombre;
-        this.establecimientos = establecimientos;
+
     }
 
     public String getNombre() {
         return this.nombre;
     }
 
-    public Establecimiento[] getEstablecimientos() {
+    public ArrayList<Establecimiento> getEstablecimientos() {
         return this.establecimientos;
+    }
+
+    public void setEstablecimientos(Establecimiento establecimiento) {
+        this.establecimientos.add(establecimiento);
     }
 }

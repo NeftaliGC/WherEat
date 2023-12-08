@@ -7,6 +7,9 @@ import java.awt.event.ActionListener;
 import com.nintech.Controller.mainController;
 
 public class Pantalla_Inicio extends JPanel{
+
+    private mainController mainController;
+    public boolean confirm = false;
     private JPanel p_inicio;
     private JLabel wherEatLabel;
     private JButton iniciarSesionButton;
@@ -32,8 +35,8 @@ public class Pantalla_Inicio extends JPanel{
 
     private CardLayout cardLayout = new CardLayout();
 
-    public Pantalla_Inicio() {
-        mainController mainController = new mainController();
+    public Pantalla_Inicio(mainController mainController) {
+        this.mainController = mainController;
         createUIComponents();
 
         iniciarSesionButton.addActionListener(new ActionListener() {
@@ -75,17 +78,12 @@ public class Pantalla_Inicio extends JPanel{
         IniciarSesionButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                System.out.println("INICIANDO SESION -----------------------------");
                 inicioSesionErrorField.setVisible(false);
                 String correo = correoFielInicio.getText();
                 String contraseña = passwordFielInicio.getText();
                 if(mainController.iniciarSesion(correo, contraseña)) {
-                    System.out.println("Iniciar Sesion");
-                    JFrame frame = new JFrame("WhereEat");
-                    frame.setContentPane(new Pantalla_Principal().getP_principal());
-                    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                    frame.pack();
-                    frame.setVisible(true);
-                    //ocultarLogin(true); ## Hay que trabajar en esto (cierre del login al iniciar sesion)
+                    confirm = true;
                 } else {
                     inicioSesionErrorField.setText("Correo o contraseña incorrectos!!!");
                     inicioSesionErrorField.setForeground(Color.red);

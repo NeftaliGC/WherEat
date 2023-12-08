@@ -1,6 +1,6 @@
 package com.nintech.Model;
 
-public class Establecimiento {
+public abstract class Establecimiento {
 
     private String nombre;
     private String horario;
