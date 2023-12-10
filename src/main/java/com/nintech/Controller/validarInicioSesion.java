@@ -16,7 +16,7 @@ public class validarInicioSesion {
             for (String[] fila : filas) {
 
                 boolean correoValido = fila[2].equals(correo);
-                boolean contraseñaValida = fila[3].equals(contraseña);
+                boolean contraseñaValida = fila[3].toString().equals(contraseña);
                 System.out.println(correoValido + " " + contraseñaValida);
 
                 System.out.println(fila[2] + " " + fila[3]);

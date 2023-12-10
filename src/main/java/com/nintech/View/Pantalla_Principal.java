@@ -35,6 +35,7 @@ public class Pantalla_Principal extends JPanel{
     private JLabel numeroDeMesasLabel;
     private JTable resultados;
     private JComboBox seccionesFiltro;
+    private JLabel nameLabel;
 
     private CardLayout cardLayout = new CardLayout();
 
@@ -248,6 +249,6 @@ public class Pantalla_Principal extends JPanel{
         panelesInfo.add(Establecimiento, "Card2");
         panelesInfo.add(BusquedaView, "Card3");
         seccionesFiltro.setVisible(false);
-
+        nameLabel.setText("Bienvenid@: " + mainController.getNombreUsuario());
     }
 }

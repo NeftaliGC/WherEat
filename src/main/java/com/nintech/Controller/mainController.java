@@ -270,4 +270,8 @@ public class mainController {
         return null;
     }
 
+    public String getNombreUsuario() {
+        return usuario.getNombre().toString();
+    }
+
 }

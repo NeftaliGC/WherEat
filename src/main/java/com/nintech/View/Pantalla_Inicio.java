@@ -104,7 +104,7 @@ public class Pantalla_Inicio extends JPanel{
                     centro.revalidate();
                     centro.repaint();
                 } else {
-                    errorRegistroField.setText("El correo ya existe!!!");
+                    errorRegistroField.setText("El correo ya existe o la contraseña no contiene letras!!!");
                     errorRegistroField.setForeground(Color.red);
                     errorRegistroField.setVisible(true);
                 }

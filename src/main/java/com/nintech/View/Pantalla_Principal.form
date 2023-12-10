@@ -77,6 +77,12 @@
               <text value="Buscar"/>
             </properties>
           </component>
+          <component id="8568d" class="javax.swing.JLabel" binding="nameLabel">
+            <constraints/>
+            <properties>
+              <text value="Label"/>
+            </properties>
+          </component>
         </children>
       </grid>
       <grid id="aabe3" binding="footer" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
