@@ -17,9 +17,7 @@ public class validarInicioSesion {
 
                 boolean correoValido = fila[2].equals(correo);
                 boolean contraseñaValida = fila[3].toString().equals(contraseña);
-                System.out.println(correoValido + " " + contraseñaValida);
 
-                System.out.println(fila[2] + " " + fila[3]);
                 if (fila[2].equals(correo) && fila[3].equals(contraseña)) {
                     return true; // Si se encuentra la combinación de correo y contraseña, retornar true
                 }
@@ -36,14 +34,10 @@ public class validarInicioSesion {
 
         try {
             // Realizar la búsqueda en el ArrayList de filas
-            System.out.println(filas.size());
 
             for (String[] fila : filas) {
 
                 boolean correoValido = fila[2].equals(correo);
-                System.out.println(correoValido);
-
-                System.out.println(fila[2]);
                 if (fila[2].equals(correo)) {
                     return true; // Si se encuentra la combinación de correo y contraseña, retornar true
                 }

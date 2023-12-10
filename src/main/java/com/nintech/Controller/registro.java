@@ -8,7 +8,7 @@ public class registro {
         String excelFileName = "menus.xlsx";
         String excelFileLocation = "src/main/resources/Data/" + excelFileName;
         File document = new File(excelFileLocation);
-        System.out.println(document.getAbsolutePath());
+
         try {
             FileInputStream fileInputStream = new FileInputStream(document.getAbsolutePath());
             Workbook workbook = WorkbookFactory.create(fileInputStream);
@@ -55,7 +55,7 @@ public class registro {
             validarInicioSesion validarSesion = new validarInicioSesion();
             //Validar que la contraseña contenga al menos una letra
             if (!contraseña.matches(".*[a-zA-Z]+.*")) {
-                System.out.println("La contraseña debe contener al menos una letra");
+
                 fileInputStream.close();
                 workbook.close();
                 return false;
@@ -64,7 +64,7 @@ public class registro {
                 row.createCell(2).setCellValue(correo);
                 row.createCell(3).setCellValue(contraseña);
             } else {
-                System.out.println("El correo ya existe");
+
                 fileInputStream.close();
                 workbook.close();
                 return false;

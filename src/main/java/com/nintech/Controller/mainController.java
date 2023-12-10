@@ -19,7 +19,6 @@ public class mainController {
     }
 
     public boolean iniciarSesion(String correo, String contraseña) {
-        System.out.println("Iniciar Sesion");
         validarInicioSesion validarSesion = new validarInicioSesion();
         boolean result = validarSesion.validarInicio(correo, contraseña);
         if (result) {
@@ -32,7 +31,6 @@ public class mainController {
     }
 
     public boolean registrarUsuario(String nombres, String apellidos, String correo, String contraseña) {
-        System.out.println("Registrar Usuario");
         registro registro = new registro();
         boolean result = registro.registrarUsuario(nombres, apellidos, correo, contraseña);
         return result;
