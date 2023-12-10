@@ -13,7 +13,4 @@ public class Usuario {
         return this.nombre;
     }
 
-    protected Credenciales getCredenciales() {
-        return this.credenciales;
-    }
 }

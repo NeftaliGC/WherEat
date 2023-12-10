@@ -11,16 +11,13 @@
   <component name="ChangeListManager">
     <list default="true" id="09277ed3-b522-4f1f-bce7-6bad0736463e" name="Changes" comment="solo falta mostrar y poder navegar en los datos">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WhereEat.drawio" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruta_del_archivo_original.xlsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nintech/Controller/mainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nintech/Controller/mainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nintech/Controller/registro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nintech/Controller/registro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nintech/Controller/validarInicioSesion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nintech/Controller/validarInicioSesion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nintech/Model/Comentario.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nintech/Model/Nombre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nintech/Model/Nombre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nintech/View/Pantalla_Inicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nintech/View/Pantalla_Inicio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nintech/Model/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nintech/Model/Usuario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nintech/View/Pantalla_Principal.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nintech/View/Pantalla_Principal.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nintech/View/Pantalla_Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nintech/View/Pantalla_Principal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Data/menus.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Data/menus.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Data/menus.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,20 +51,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW": "true",
-    "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "206",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/Nintech/Proyectos/Programas/java/WherEat/WherEat/src/main/resources/Data",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH&quot;: &quot;206&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Nintech/Proyectos/Programas/java/WherEat/WherEat/src/main/resources/Data&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Nintech\Proyectos\Programas\java\WherEat\WherEat\src\main\java\com\nintech\resources" />
@@ -180,7 +177,7 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/nintech/Controller/mainController.java</url>
-          <line>168</line>
+          <line>167</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
@@ -190,22 +187,22 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/nintech/Controller/mainController.java</url>
-          <line>182</line>
+          <line>181</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/nintech/Controller/mainController.java</url>
-          <line>64</line>
+          <line>63</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/nintech/Controller/mainController.java</url>
-          <line>215</line>
+          <line>214</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/nintech/Controller/mainController.java</url>
-          <line>191</line>
+          <line>190</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -230,7 +227,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/nintech/Controller/mainController.java</url>
-          <line>272</line>
+          <line>271</line>
           <properties class="com.nintech.Controller.mainController" method="getNombreUsuario">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
