@@ -2,7 +2,7 @@
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.nintech.View.Pantalla_Principal">
   <grid id="27dc6" binding="pantalla" layout-manager="BorderLayout" hgap="0" vgap="0">
     <constraints>
-      <xy x="20" y="20" width="720" height="400"/>
+      <xy x="20" y="20" width="950" height="400"/>
     </constraints>
     <properties>
       <preferredSize width="1080" height="720"/>
@@ -46,9 +46,10 @@
           <hspacer id="283b">
             <constraints/>
           </hspacer>
-          <component id="11317" class="javax.swing.JTextField" binding="busqueda">
+          <component id="11317" class="javax.swing.JTextField" binding="busquedaJTextField">
             <constraints/>
             <properties>
+              <editable value="true"/>
               <horizontalAlignment value="11"/>
               <inheritsPopupMenu value="false"/>
               <preferredSize width="300" height="30"/>
@@ -61,8 +62,13 @@
                 <item value="Filtros"/>
                 <item value="Facultad"/>
                 <item value="Especialidad"/>
-                <item value="Cafeteria"/>
               </model>
+            </properties>
+          </component>
+          <component id="9ecd8" class="javax.swing.JComboBox" binding="seccionesFiltro">
+            <constraints/>
+            <properties>
+              <model/>
             </properties>
           </component>
           <component id="5680" class="javax.swing.JButton" binding="buscarButton" default-binding="true">
@@ -81,17 +87,122 @@
           <component id="b92f4" class="javax.swing.JLabel">
             <constraints/>
             <properties>
-              <text value="Aqui iran cositas."/>
+              <text value="Desarollado por:"/>
             </properties>
           </component>
         </children>
       </grid>
-      <component id="e0f0d" class="javax.swing.JScrollBar" binding="scrollBar">
-        <constraints border-constraint="East"/>
-        <properties>
-          <autoscrolls value="true"/>
-        </properties>
-      </component>
+      <grid id="1c1e1" binding="panelesInfo" layout-manager="CardLayout" hgap="0" vgap="0">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <scrollpane id="b3e44" binding="Facs">
+            <constraints>
+              <card name="Card1"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="6c1f6" binding="Facultades" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="c754b" class="javax.swing.JLabel">
+                    <constraints border-constraint="North"/>
+                    <properties>
+                      <font size="20"/>
+                      <horizontalAlignment value="0"/>
+                      <text value="Facultades"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </scrollpane>
+          <scrollpane id="fb88b" binding="Establecimiento">
+            <constraints>
+              <card name="Card2"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="72ba8" binding="Estab" layout-manager="GridLayoutManager" row-count="3" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="5" left="10" bottom="10" right="10"/>
+                <constraints/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="78ebc" class="javax.swing.JLabel" binding="establecimientoLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font size="20"/>
+                      <horizontalAlignment value="0"/>
+                      <horizontalTextPosition value="0"/>
+                      <text value="Establecimiento: "/>
+                    </properties>
+                  </component>
+                  <component id="807c3" class="javax.swing.JLabel" binding="horarioLabel">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="126" height="16"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value="Horario:"/>
+                    </properties>
+                  </component>
+                  <component id="f0190" class="javax.swing.JLabel" binding="especialidadLabel">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="599" height="16"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <opaque value="false"/>
+                      <text value="Especialidad: "/>
+                      <visible value="true"/>
+                    </properties>
+                  </component>
+                  <component id="e2de8" class="javax.swing.JLabel" binding="numeroDeMesasLabel">
+                    <constraints>
+                      <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <opaque value="false"/>
+                      <text value="Numero de mesas: "/>
+                    </properties>
+                  </component>
+                  <component id="c907a" class="javax.swing.JTable" binding="Menu">
+                    <constraints>
+                      <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="50"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </scrollpane>
+          <scrollpane id="aa8ea" binding="BusquedaView">
+            <constraints>
+              <card name="Card3"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="d921d" class="javax.swing.JTable" binding="resultados">
+                <constraints/>
+                <properties/>
+              </component>
+            </children>
+          </scrollpane>
+        </children>
+      </grid>
     </children>
   </grid>
 </form>

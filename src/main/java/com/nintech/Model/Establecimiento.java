@@ -4,13 +4,14 @@ public abstract class Establecimiento {
 
     private String nombre;
     private String horario;
-
+    private String tipo;
     private Menu menu;
 
-    public Establecimiento(String nombre, String horario, Menu menu) {
+    public Establecimiento(String nombre, String horario, Menu menu, String tipo) {
         this.nombre = nombre;
         this.horario = horario;
         this.menu = menu;
+        this.tipo = tipo;
     }
 
     public String getNombre() {
@@ -23,6 +24,10 @@ public abstract class Establecimiento {
 
     public Menu getMenu() {
         return this.menu;
+    }
+
+    public String getTipo() {
+        return this.tipo;
     }
 
 }

@@ -19,6 +19,8 @@ public class GetTable {
         table.put("Humanidades", 6);
         table.put("Contaduria", 7);
         table.put("Economia", 8);
+        table.put("Cafe EDG", 9);
+        table.put("Cafe Arqui", 10);
     }
 
 
